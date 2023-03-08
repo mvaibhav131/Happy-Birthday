@@ -42,14 +42,14 @@ img.center {
     --animate-delay: 2.8s;
 }
 .animate__animated.animate__bounceInLeft {
-    --animate-delay: 3.5s;
+    --animate-delay: 3s;
 }
 .animate__animated.animate__heartBeat {
-    --animate-delay: 3.7s;
-    --animate-duration: 4s;
+    --animate-delay: 3s;
+    --animate-duration: 3s;
 }
 .animate__animated.animate__bounceIn {
-    --animate-delay: 4.2s;
+    --animate-delay: 3s;
 }
  
 .invisible {
@@ -179,7 +179,7 @@ h5 {
 }
 
 .container div.buttons {
-    top: 94vh;
+    top: 78vh;
     z-index: 5;
 }
 
