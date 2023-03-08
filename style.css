@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: mediumpurple;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+img {
+    width: 500px;
+    height: 400px;
+}
+
+a {
+    text-decoration: none;
+}
+#heartText{
+    color:greenyellow;
+    font-size: 20px;
+    
+}
+.name{
+    color: rgb(77, 255, 0);
+    font-family: sans-serif;
+}
+
+img.center {
+    display: block;
+    margin: 0 auto;
+}
+
+.animate__animated.animate__rotateIn {
+    --animate-duration: 2s;
+}
+.animate__animated.animate__fadeInUpBig {
+    --animate-delay: 2.5s;
+}
+.animate__animated.animate__fadeIn {
+    --animate-delay: 2.8s;
+}
+.animate__animated.animate__bounceInLeft {
+    --animate-delay: 3.5s;
+}
+.animate__animated.animate__heartBeat {
+    --animate-delay: 3.7s;
+    --animate-duration: 4s;
+}
+.animate__animated.animate__bounceIn {
+    --animate-delay: 4.2s;
+}
+ 
+.invisible {
+    opacity: 0;
+}
+.visible {
+    opacity: 1;
+}
+
+.container {
+    height: 100vh;
+    width: 100vh;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    /* overflow: hidden; */
+}
+.container div.wish {
+    top: 10vh;
+    z-index: 1;
+}
+.container > div {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20vh;
+}
+  
+.one {
+    font-size: 2.5rem;
+}
+.two {
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+  
+.three {
+    font-size: 2.5rem;
+    padding: 3px 5px;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+#balloon-container {
+    height: 100vh;
+    top: 0vh;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  
+  .balloon {
+    height: 125px;
+    width: 105px;
+    border-radius: 75% 75% 70% 70%;
+    position: relative;
+  }
+  
+  .balloon:before {
+    content: "";
+    height: 75px;
+    width: 1px;
+    padding: 1px;
+    background-color: #FDFD96;
+    display: block;
+    position: absolute;
+    top: 125px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  
+  .balloon:after {
+      content: "▲";
+      text-align: center;
+      display: block;
+      position: absolute;
+      color: inherit;
+      top: 120px;
+      left: 0;
+      right: 0;
+      margin: auto;
+  }
+  
+  @keyframes float {
+    from {transform: translateY(100vh);
+    opacity: 1;}
+    to {transform: translateY(-300vh);
+    opacity: 0;}
+  }
+/*
+@keyframes rotate {
+    from {
+        transform: rotate(45deg);
+    }
+    to {
+        transform: rotate(90deg);
+    }
+} */
+.wish-hbd {
+    height: 350px;
+    position: relative;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  
+h5 {
+    font-weight: lighter;
+    font-size: 1.5rem;
+    margin: 10px 0 0;
+}
+
+/* Remove `display: none` to use Refresh button and Count-up timer */
+#seconds {
+    display: none;
+}
+
+.refresh-btn {
+    display: none;
+    position: absolute;
+    z-index: 5;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.container div.buttons {
+    top: 94vh;
+    z-index: 5;
+}
+
+#gradient-text {
+    background-color: #ee1b1b;
+    background-image: linear-gradient(45deg, #ff0000, #0d10aa);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+      width: 90%;
+    }
+    .one {
+        font-size: 2rem;
+    }
+    .three {
+        font-size: 2.1rem;
+    }
+    .four {
+      width: 90%;
+    }
+    .wish-hbd {
+        font-size: 1.8rem;
+      }
+    
+    h5 {
+        font-size: 1.3rem;
+      }
+    img {
+        width: 300px;
+        height: 200px;
+    }
+    .refresh-btn {
+        display: none;
+    }
+}
