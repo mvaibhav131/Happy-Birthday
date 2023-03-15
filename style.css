@@ -208,15 +208,15 @@ h5 {
     }
     .wish-hbd {
         font-size: 1.8rem;
-      }
+      };
     
     h5 {
         font-size: 1.3rem;
-      }
+      };
     img {
         width: 300px;
         height: 200px;
-    }
+    };
     .refresh-btn {
         display: none;
     };
